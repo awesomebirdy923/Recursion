@@ -14,7 +14,7 @@ void setup(){
 
 void draw(){
   fill(#0000FF);
-  recursiveRect(300, 25, 200, 200, 5);
+  recursiveRect(300, 25, 200, 200, 25);
   fill(#FF0000);
   recursiveEllipse(200, 400, 300, 200, 16);
   
