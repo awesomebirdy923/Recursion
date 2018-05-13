@@ -17,11 +17,11 @@ void recursiveRect(int x, int y, int w, int h, int scale){
 void recursiveEllipse(int x, int y, int w, int h, int scale){
   ellipse(x,y,w,h);
   if(w > 0 && h > 0){
-   float ratio = w/h;
-   float ratioTwo = h/w;
+   float ratio = (float)w/h;
+   float ratioTwo = (float)h/w;
    int newWidth = (int)(w-(scale*ratio));
    int newHeight = (int)(h-(scale*ratioTwo));
-  print(newWidth + " " + newHeight + "\n");
+  print(ratio + " " + ratioTwo + "\n");
   recursiveEllipse(x,y,newWidth,newHeight,scale);
   }
 }
